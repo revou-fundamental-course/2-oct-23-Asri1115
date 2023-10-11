@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Suhu</title>
-    <link rel="stylesheet" href="css/style.css"
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -12,15 +13,25 @@
     </header>
     <main>
         <section class="input-section">
-            <label for="input-field">Celcius</label>
-            <input id="input-field" type="number" placeholder="0">
+            <label for="input-field">Celcius (°C) :</label>
+            <input id="inputCelsius" type="number" placeholder="Celsius"
+            oninput="celsiusConverter(this.value)" onchange="celsiusConverter(this.value)">
+            <output id="outputCelsius"></output>             
             <div>
-                <button>Konversi</button>
+                <button type="button" id="buttonConvert" onclick=celsiusConverter(valNum)>Conversion</button>
                 <button>Reset</button>
                 <button>Reverse</button>
             </div>
+            <label for="output-field" id="output-field">Fahrenheit (°F) :</label>
+                <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                oninput="fahrenheitConverter(this.value)" onchange="fahrenheitConverter(this.value)">
+                <output id="outputFahrenheit"></output>
+                
+            
+            
         </section>
-        
+       
+    
     </main>
 </body>
 </html>
