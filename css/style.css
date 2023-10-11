@@ -34,6 +34,11 @@ input {
     outline: none;
 }
 
+output {
+    background-color: white;
+    padding: 10px;
+}
+
 input:focus {
     border-color: #CDFAD5
 }
