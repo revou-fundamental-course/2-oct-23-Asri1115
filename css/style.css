@@ -13,7 +13,7 @@ header {
     flex-direction: column;
 }
 
-.output-field {
+.output-label {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -24,6 +24,7 @@ label {
     margin-bottom: 6px;
     font-weight: bold;
     font-size: 16px;
+    
 }
 
 input {
@@ -32,11 +33,7 @@ input {
     border-radius: 4px;
     margin-bottom: 6px;
     outline: none;
-}
-
-output {
     background-color: white;
-    padding: 10px;
 }
 
 input:focus {
@@ -62,6 +59,13 @@ button:hover {
 button:active {
     background-color: #66cac4;
     transform: translateY(1px);
+}
+
+footer {
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ align-content: center;
+ font-weight: bold;   
+ color: #186F65;
 }
 
 body {
